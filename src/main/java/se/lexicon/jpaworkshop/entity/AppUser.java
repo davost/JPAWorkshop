@@ -21,6 +21,14 @@ public class AppUser {
     public AppUser() {
     }
 
+    public AppUser(int appUserId, String username, String password, LocalDate regDate, Details userDetails) {
+        this.appUserId = appUserId;
+        this.username = username;
+        this.password = password;
+        this.regDate = regDate;
+        this.userDetails = userDetails;
+    }
+
     public int getAppUserId() {
         return appUserId;
     }
