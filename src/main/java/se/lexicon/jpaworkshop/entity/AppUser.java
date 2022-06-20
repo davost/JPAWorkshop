@@ -4,6 +4,7 @@ import org.hibernate.annotations.Generated;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Objects;
 @Entity
 public class AppUser {
@@ -17,6 +18,8 @@ public class AppUser {
     @OneToOne
     @JoinColumn(name = "userDetails_id")
     private Details userDetails;
+
+   // private List<BookLoan>;
 
     public AppUser() {
     }
